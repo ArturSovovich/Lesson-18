@@ -35,9 +35,11 @@ img{
 .main{
   flex: 1 1 auto;
 }
+.header{
+  margin-top: 70px;
+}
 .container-big{
   max-width: 1690px;
-  margin-top: 35px;
 }
 .container-xl{
   max-width: 1190px;
@@ -67,7 +69,7 @@ img{
 /* ----main-top--- */
 .main-top-wrapper{
   padding-top: 440px;
-  background: url(../img/page-holder/bg-top.png) center/cover no-repeat;
+  background: url(../img/page-holder/bg-top.png) top/100% 97% no-repeat;
 }
 .title-top{
   font-size: 60px;
@@ -87,7 +89,7 @@ img{
   color: #00a8ff;
 }
 
-/* ---main-conditions--- */
+/* ---main-top-conditions--- */
 .carousel-indicators {
     position: absolute;
     top: 16%;
@@ -122,7 +124,7 @@ img{
 .schedule-section{
   bottom: 0.6rem;
 }
-/* ---carousel-schedule--- */
+/* ---main-top-carousel--- */
 .carousel-schedule-text:not(:last-child)::after{
   content: "";
   display: block;
@@ -188,4 +190,75 @@ img{
   font-size: 18px;
   font-weight: 300;
   line-height: 2;
+}
+
+/* ----main-services--- */
+.main-services{
+  margin-top: 170px;
+}
+/* ----main-services-title--- */
+.main-titles .services-title{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+.main-titles .services-title-text{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2;
+  color: #bbb;
+}
+/* ----main-services-cards--- */
+.services-cards {
+  margin-top: 170px;
+}
+.cards-section{
+  border: solid 1px #ddd;
+  transition: all 1s ease 0s;
+  padding-bottom: 86%;
+  z-index: 1;
+}
+.cards-section:hover{
+  border: 1px solid #00a8ff;
+  cursor: pointer;;
+}
+.cards-section:hover>div{
+  top: -8%;
+  transition: all 1s ease 0s;
+}
+.cards-section>div{
+  width: 75%;
+  top: 32%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 0);
+  transition: all 1s ease 0s;
+  pointer-events: none;
+}
+.cards-section:hover .card-description{
+  opacity: 1;
+  transition: all 1s ease-in 0s;
+}
+.card-icon{
+  width: 56px;
+  height: 46px;
+  background: #fff;
+  margin-bottom: 3.2em;
+}
+.card-icon img{
+  object-fit: none;
+}
+.card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+.card-description{
+  font-size: 18px;
+  line-height: 1.78;
+  color: #999;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.5s ease-out 0s;
 }
