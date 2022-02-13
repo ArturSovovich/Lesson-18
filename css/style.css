@@ -23,6 +23,12 @@
     font-style: normal;
 
 }
+/* .show {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgb(0, 0, 0);
+  } */
 
 /* ---globall---- */
 .page-holder{
@@ -38,7 +44,7 @@ img{
 .header{
   margin-top: 70px;
 }
-.container-big{
+.container-xxl{
   max-width: 1690px;
 }
 .container-xl{
@@ -53,38 +59,53 @@ img{
 .icon-logo img{
   object-fit: cover;
 }
-.navbar-nav a{
-  font-size: 18px;
-  font-weight: 300;
+.navbar-light .navbar-toggler {
+    color: rgb(0 8 255);
+    border-color: rgb(255 255 255);
+    background-color: white;;
 }
-.navbar-nav a:not(:last-child){
-  margin-right: 45px;
+.navbar-bg{
+  background-color: rgb(196 210 210 / 99%);
+  margin-top: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  outline: 2px solid transparent;
+  margin-right: 5px;
+}
+.navbar-light .navbar-nav .nav-link:last-child{
+  margin-right: 0px;
 }
 .navbar-nav .nav-link.btn-nav{
   background-color: #00a8ff;
-  padding: 18px 30px 19px 30px;
+  padding: 10px 20px 11px 20px;
   line-height: 1;
+  transition: all 0.2s ease;
 }
 
 /* ----main-top--- */
 .main-top-wrapper{
-  padding-top: 440px;
-  background: url(../img/page-holder/bg-top.png) top/100% 97% no-repeat;
+  padding-top: 180px;
+  background: url(../img/page-holder/bg-top.png) top/cover no-repeat;
 }
 .title-top{
-  font-size: 60px;
-  font-weight: 700;
   color: white;
   text-align: center;
-  margin-bottom: 391px;
-  line-height: 0.9em;
+  margin-bottom: 80px;
+}
+.title-top h1{
+  font-size: 40px;
+  font-weight: 700;
 }
 .title-top .title-top-litle{
   font-size: 36px;
   font-weight: 100;
+  line-height: 1em;
 }
 .title-top .title-top-dekor{
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #00a8ff;
 }
@@ -194,7 +215,7 @@ img{
 
 /* ----main-services--- */
 .main-services{
-  margin-top: 170px;
+  margin-top: 70px;
 }
 /* ----main-services-title--- */
 .main-titles .services-title{
@@ -210,7 +231,7 @@ img{
 }
 /* ----main-services-cards--- */
 .services-cards {
-  margin-top: 170px;
+  margin-top: 0px;
 }
 .cards-section{
   border: solid 1px #ddd;
@@ -261,4 +282,119 @@ img{
   opacity: 0;
   text-align: center;
   transition: all 0.5s ease-out 0s;
+}
+
+/* ---main-team--- */
+.main-team-wrapper{
+  padding-top: 338px;
+  background: url(../img/team/bg.svg) top/cover no-repeat;
+}
+.main-team{
+}
+.team-cards{
+  margin-top: 160px;
+}
+.team-profile-img{
+  margin-bottom: 120px;
+}
+.team-profile-img .team-avatar{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team-profile-name{
+  box-shadow: 0px 2px 3px 0 rgba(1, 2, 2, 0.07);
+  background-color: #fff;
+}
+.team-profile-name .card-title{
+  margin-bottom: 0px;
+}
+.team-profile-name .card-description{
+  color: #bbb;
+  opacity: 1;
+  line-height: 2.67em;
+}
+
+
+/* ---media query--- */
+@media (min-width: 768px){
+  .main-top-wrapper {
+    padding-top: 240px;
+  }
+  .title-top {
+    font-size: 50px;
+    margin-bottom: 180px;
+    line-height: 0.8em;
+  }
+  .title-top .title-top-dekor{
+  font-size: 50px;
+  }
+  .title-top-litle{
+    margin-bottom: 0;
+  }
+  .main-services {
+    margin-top: 170px;
+  }
+  .services-cards {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 992px){
+  .navbar-bg {
+    background-color: rgba(28, 106, 103, 0);
+    margin-top: 0px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .navbar-light .navbar-nav .nav-link:not(:last-child){
+    margin-right: 45px;
+  }
+  .navbar-light .navbar-nav .nav-link:hover:not(:last-child) {
+    transform: scale(1.1);
+    outline: 2px solid #00a8ff;
+    transition: transform 1s ease, outline 0.5s ease-in-out;
+    color: white;
+  }
+  .navbar-nav .nav-link.btn-nav{
+  background-color: #00a8ff;
+  padding: 18px 30px 19px 30px;
+  line-height: 1;
+  transition: all 0.2s ease;
+  }
+  .navbar-nav .nav-link.btn-nav:hover{
+  background-color: #0084ff;
+  box-shadow: 2px 2px 6px 1px #252627;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  color: white;
+  }
+.navbar-nav .nav-link.btn-nav:active{
+  box-shadow: 1px 1px 3px 0px #252627;
+  transform: translate(2px, 2px);
+  transition: all 0.2s ease;
+  }
+}
+@media (min-width: 1200px){
+  .main-top-wrapper {
+    padding-top: 440px;
+  }
+  .title-top {
+    margin-bottom: 391px;
+  }
+  .title-top h1{
+  font-size: 60px;
+  font-weight: 700;
+  }
+  .title-top .title-top-dekor{
+    font-size: 60px;
+  }
+  .services-cards {
+    margin-top: 170px;
+  }
 }

@@ -9,5 +9,11 @@
     "jsxBracketSameLine": false,
     "arrowParens": "avoid",
     "proseWrap": "always",
-    "editor.tabSize": 3
+    "editor.tabSize": 3,
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript"
+    ]
 }
