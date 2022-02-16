@@ -286,7 +286,7 @@ img{
 
 /* ---main-team--- */
 .main-team-wrapper{
-  padding-top: 338px;
+  padding: 338px 0 160px;
   background: url(../img/team/bg.svg) top/cover no-repeat;
 }
 .main-team{
@@ -303,11 +303,15 @@ img{
   border-radius: 50%;
   top: 100%;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
 }
-.team-profile-name{
+.team-card-section{
   box-shadow: 0px 2px 3px 0 rgba(1, 2, 2, 0.07);
-  background-color: #fff;
+}
+.team-card-section:hover .team-profile-price{
+  opacity: 0.8;
+  transition: all 0.7s ease;
 }
 .team-profile-name .card-title{
   margin-bottom: 0px;
@@ -315,8 +319,122 @@ img{
 .team-profile-name .card-description{
   color: #bbb;
   opacity: 1;
-  line-height: 2.67em;
+  line-height: 2em;
 }
+.team-btn{
+  border: solid 1px #00a8ff;
+  font-size: 18px;
+  font-weight: 400;
+  color: #00a8ff;
+}
+.team-btn:hover{
+  background: #00a8ff;
+  color: #fff;
+}
+.team-profile-price{
+  transition: all 0.5s ease;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 168, 255, 0.9), rgba(0, 168, 255, 0.9)), linear-gradient(to top, #303b64, rgba(0, 0, 0, 0.6));
+}
+.team-profile-price>p:first-child{
+  font-size: 30.5px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.team-profile-price>p:last-child{
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---main-pricing--- */
+.main-pricing-wrapper{
+  padding: 160px 0;
+  background: url(../img/pricing/img.webp) top/cover no-repeat;
+}
+.pricing-box{
+  padding-bottom: 79%;
+  z-index: 2;
+  border: solid 2px #00a8ff;
+  background-color: #00a8ff;
+  border-radius: 0;
+}
+.card-text{
+  font-size: 30.5px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 18%;
+}
+.card-body{
+  min-height: 100%;
+  top: 0%;
+  left: 0%;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.cart-pricing{
+  border: solid 2px #bbb;
+  background-color: #bbb;
+  z-index: 4;
+  text-align: center;
+}
+.pricing-box:hover .cart-pricing{
+  left: -100%;
+  transition: all 0.3s ease;
+  text-align: start;
+  padding-left: 3rem;
+  border: solid 2px #00a8ff;
+  background-color: #00a8ff;
+}
+.cart-pricing>.team-btn:hover{
+  background-color: #303b64;
+}
+.card-body>.cart-list{
+  width: 100%;
+  max-width: 300px;
+  z-index: 3;
+  padding-left: 1rem;
+}
+.cart-list ul{
+  font-size: 18px;
+  line-height: 1.8;
+  list-style-type: square;
+  list-style-position: inside;
+  margin-top: 34px;
+}
+
+/* ---main-carousel-bottom */
+.carousel-bottom-item{
+  padding-bottom: 30%;
+  background-color: #00a8ff;
+}
+.carousel-bottom-text{
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  top: 29%;
+}
+.carousel-bottom-link{
+  display: inline-block;
+  width: 26px;
+  height: 21px;
+  margin-bottom: 60px;
+  background: url(../img/carousel-bottom-link/twitter-icon.webp) center no-repeat;
+}
+.carousel-bottom-title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.carousel-bottom-hashtag {
+  color: #93daff;
+}
+
+
 
 
 /* ---media query--- */
