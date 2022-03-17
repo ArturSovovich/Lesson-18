@@ -36,7 +36,7 @@ img{
   flex: 1 1 auto;
 }
 .header{
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .container-xxl{
   max-width: 1690px;
@@ -63,7 +63,7 @@ img{
   position: absolute;
   top: 95%;
   left: 50%;
-  width: 102%;
+  width: 105%;
   transform: translate(-50%, 0);
 }
 .navbar-light .navbar-nav .nav-link {
@@ -71,10 +71,12 @@ img{
   font-size: 20px;
   font-weight: 600;
   outline: 2px solid transparent;
-  margin-right: 25px;
+  margin-right: 5%;
+  text-decoration: underline;
 }
 .navbar-light .navbar-nav .nav-link:last-child{
-  margin-right: 20px;
+  margin-right: 5%;
+  text-decoration: none;
 }
 .btn-nav{
   background-color: #00a8ff;
@@ -84,13 +86,13 @@ img{
 
 /* ----main-top--- */
 .main-top-wrapper{
-  padding-top: 180px;
+  padding-top: 120px;
   background: url(../img/page-holder/bg-top.png) top/cover no-repeat;
 }
 .title-top{
   color: white;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 13%;
 }
 .title-top h1{
   font-size: 40px;
@@ -109,8 +111,9 @@ img{
 
 /* ---main-top-conditions--- */
 .carousel-indicators {
-  top: 16%;
-  right: 9.5%;
+  top: 6%;
+  right: 50%;
+  transform: translateX(14%);
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -501,12 +504,15 @@ img{
 
 /* ---media query--- */
 @media (min-width: 768px){
+  .header{
+    margin-top: 70px;
+  }
   .main-top-wrapper {
-    padding-top: 240px;
+    padding-top: 200px;
   }
   .title-top {
     font-size: 50px;
-    margin-bottom: 180px;
+    margin-bottom: 100px;
     line-height: 0.8em;
   }
   .title-top .title-top-dekor{
@@ -580,6 +586,7 @@ img{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 300;
+    text-decoration: none;
   }
   .navbar-light .navbar-nav .nav-link:not(:last-child){
     margin-right: 45px;
@@ -606,6 +613,14 @@ img{
     box-shadow: 1px 1px 3px 0px #252627;
     transform: translate(2px, 2px);
     transition: all 0.2s ease;
+  }
+  .carousel-indicators {
+    top: 14%;
+    right: 9.5%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    transform: translateX(0);
   }
   .cards-section{
     border: 1px solid #ddd;
