@@ -279,11 +279,11 @@ img{
 
 /* ---main-team--- */
 .main-team-wrapper{
-  padding: 138px 0 60px;
+  padding: 38px 0 60px;
   background: url(../img/team/bg.svg) top/cover no-repeat;
 }
 .team-profile-img{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .team-profile-img .team-img{
   height: 240px;
@@ -401,9 +401,10 @@ img{
 .carousel-indicators.bottom{
   top: 90%;
   right: 0;
+  transform: translateX(0%);
 }
 .carousel-bottom-item{
-  padding-bottom: 472px;
+  padding-bottom: 380px;
   background-color: #00a8ff;
 }
 .carousel-bottom-text{
@@ -412,12 +413,14 @@ img{
   line-height: 1.4em;
   top: 8%;
 }
-.carousel-bottom-link{
+.carousel-bottom-icon{
   display: inline-block;
   width: 26px;
   height: 21px;
   margin-bottom: 60px;
-  background: url(../img/carousel-bottom-link/twitter-icon.webp) center no-repeat;
+}
+.carousel-bottom-icon img{
+  object-fit: cover;
 }
 .carousel-bottom-title {
   font-size: 30px;
@@ -444,14 +447,14 @@ img{
   font-size: 18px;
   line-height: 1em;
   font-weight: 400;
+  margin-bottom: 36px;
   color: #bbbbbb;
 }
 .footer-butoon{
-  margin-top: 76px;
   background-color: #00a8ff;
 }
 .opening-hours{
-  margin-top: 68px;
+  margin-top: 28px;
 }
 .working-days{
   font-weight: 400;
@@ -459,14 +462,10 @@ img{
   font-size: 18px;
   line-height: 2em;
   color: #bbbbbb;
-  margin-right: 69px;
 }
 .time {
   font-size: 24px;
   line-height: 36px;
-}
-.footer-bottom{
-  margin-top: 162px;
 }
 .protection-right {
   font-size: 16px;
@@ -526,7 +525,7 @@ img{
     left: 12%;
   }
   .main-services {
-    margin-top: 170px;
+    margin-top: 70px;
   }
   .services-cards {
     margin-top: 100px;
@@ -539,6 +538,9 @@ img{
   }
   .pricing-box{
     margin-top: 0px;
+  }
+  .main-team-wrapper{
+    padding: 68px 0 60px;
   }
   .team-cards{
     margin-top: 60px;
@@ -561,18 +563,23 @@ img{
   .cart-list ul{
     margin-top: 34px;
   }
-  .carousel-indicators.bottom{
-    top: 70%;
-    right: 0;
-  }
   .carousel-bottom-item{
-    padding-bottom: 572px;
+    padding-bottom: 372px;
   }
   .carousel-bottom-text{
-    top: 28%;
+    top: 18%;
   }
   .footer-containtr{
-    padding: 120px 0 60px;
+    padding: 60px 0 20px;
+  }
+  .footer-top{
+    margin-bottom: 82px;
+  }
+  .free-class p{
+    margin-bottom: 96px;
+  }
+  .opening-hours{
+    margin-top: 68px;
   }
 }
 @media (min-width: 992px){
@@ -622,6 +629,9 @@ img{
     margin-left: 0;
     transform: translateX(0);
   }
+  .main-services {
+    margin-top: 170px;
+  }
   .cards-section{
     border: 1px solid #ddd;
     cursor: pointer;
@@ -645,8 +655,14 @@ img{
     opacity: 1;
     transition: all 1s ease-in 0s;
   }
+  .main-team-wrapper{
+    padding: 138px 0 60px;
+  }
   .team-cards{
     margin-top: 100px;
+  }
+  .team-profile-img{
+  margin-bottom: 120px;
   }
   .main-pricing-wrapper{
     padding: 160px 0;
@@ -668,11 +684,20 @@ img{
     background-color: #00a8ff;
   }
   .footer-containtr{
-    padding: 199px 0 84px;
+    padding: 199px 0 64px;
   }
   .social a:hover{
     transform: scale(1.3);
     transition: transform 0.5s ease;
+  }
+  .carousel-bottom-item{
+    padding-bottom: 472px;
+  }
+  .carousel-bottom-text{
+    top: 28%;
+  }
+  .footer-top{
+    margin-bottom: 162px;
   }
 }
 @media (min-width: 1200px){
